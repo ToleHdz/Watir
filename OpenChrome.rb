@@ -22,4 +22,26 @@ MisP.each do |p|
 end
 
 puts "id: #{MisP[5].id} & text: #{MisP[5].text}"
+
+
+#accedemos a las opciones de un select 
+MisOpciones = Navegador.select_list(:id => 'opciones').options
+
+puts "\nHay #{MisOpciones.length} opciones"
+
+MisOpciones.each do |option|
+	puts "Tengo una opcion con el valor #{option.value}"
+	puts "Valor de la opcion: #{option.text}"
+	puts ' '
+end
+
+
+#si agregamos un return, nos devolvera el valor del metodo a ejecutar
+#los metodos pueden estar en un archivo JS por separado
+
+#que podemos hacer con JQuery
+MiCadena = Navegador.execute_script("return Cadena()")
+
+puts MiCadena
 sleep()
+
