@@ -41,7 +41,15 @@ end
 
 #que podemos hacer con JQuery
 MiCadena = Navegador.execute_script("return Cadena()")
-
 puts MiCadena
+
+#ver todo el codigo fuente de una pagina HTML
+#puts Navegador.html
+
+
 sleep()
 
+#references http://watir.com/guides/alerts/
+#references http://www.rubydoc.info/gems/watir-webdriver/Watir/Menu
+#references https://github.com/watir/watir_meta/wiki/Finding-Page-Elements
+#references https://www.sitepoint.com/watir-webdriver-control-browser/
